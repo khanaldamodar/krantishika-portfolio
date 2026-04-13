@@ -4,9 +4,9 @@ import SpeechVideosSection from "@/components/speeches/SpeechVideosSection";
 import { speeches, speechVideos } from "@/lib/speeches-data";
 
 export const metadata = {
-  title: "Speeches | Krantishikha Dhital",
+  title: "Articles | Krantishikha Dhital",
   description:
-    "Read the speeches and addresses of Krantishikha Dhital — Member of Federal Parliament, social advocate, and psychosocial counselor — delivered across Nepal and beyond.",
+    "Read the articles and writings of Krantishikha Dhital — Member of Federal Parliament, social advocate, and psychosocial counselor — delivered across Nepal and beyond.",
 };
 
 async function getYoutubeTitle(youtubeId: string) {
@@ -32,7 +32,7 @@ export default async function SpeechesPage() {
 
   return (
     <main>
-      <PageHeader title="Speeches" />
+      <PageHeader title="Articles" />
       <SpeechesSection speeches={speeches} />
       <SpeechVideosSection videos={videosWithTitles} />
     </main>

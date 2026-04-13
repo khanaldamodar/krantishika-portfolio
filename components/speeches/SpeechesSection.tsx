@@ -25,7 +25,7 @@ const SpeechCard = ({ speech, index }: { speech: Speech; index: number }) => {
     CATEGORY_COLORS[speech.category] ?? "bg-[#001f54] text-white";
 
   return (
-    <Link href={`/speeches/${speech.slug}`} className="group block h-full">
+    <Link href={`/articles/${speech.slug}`} className="group block h-full">
       <article
         className="relative flex flex-col h-full bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm
           transition-all duration-500 hover:shadow-2xl hover:-translate-y-2 hover:border-[#001f54]/20"
@@ -107,7 +107,7 @@ export default function SpeechesSection({ speeches }: SpeechesSectionProps) {
             Words That Matter
           </p>
           <h2 className="text-[#001f54] text-4xl md:text-5xl font-extrabold tracking-tight">
-            Speeches &amp; Addresses
+            Articles &amp; Addresses
           </h2>
           <p className="mt-4 text-gray-500 text-base max-w-2xl mx-auto leading-relaxed">
             A collection of addresses delivered in Parliament, at national conferences, and community forums — advocating for justice, equality, and progress.
