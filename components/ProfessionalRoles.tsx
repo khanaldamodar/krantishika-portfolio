@@ -1,20 +1,22 @@
-"use client";
-
 import React from 'react';
+import { portfolioData } from '@/lib/portfolio-data';
 
 const ProfessionalRoles = () => {
   const roles = [
     {
-      title: "Member of Federal Parliament",
-      description: "Serving with commitment to national development, legislative responsibility, and public representation. Focused on policies that strengthen democracy, inclusion, and long-term social progress."
+      title: portfolioData.workExperience[0].role,
+      organization: portfolioData.workExperience[0].organization,
+      description: "Defining vision, manifesto, and core structures for one of Nepal's major political parties."
     },
     {
-      title: "Central Committee Member",
-      description: "Contributing to strategic leadership, policy direction, and organizational development through active participation in key decision-making processes."
+      title: portfolioData.workExperience[1].role,
+      organization: "Ministry of Work & Employment",
+      description: "Leading labor policy development and employment promotion initiatives through the Shramadhan project."
     },
     {
       title: "Psychosocial Counselor",
-      description: "Supporting individuals and communities through counseling, mental health awareness, and psychosocial guidance that promotes resilience and well-being."
+      organization: "Calm Convo",
+      description: "Providing trauma-informed care and mental health support with a background in psychology and emotional resilience."
     }
   ];
 
@@ -29,6 +31,11 @@ const ProfessionalRoles = () => {
               ${index !== roles.length - 1 ? 'md:border-r md:border-white/20' : ''}
             `}
           >
+            {/* Organization Tag */}
+            <span className="text-blue-300 text-[10px] md:text-xs font-bold uppercase tracking-widest mb-4 opacity-70">
+              {role.organization}
+            </span>
+
             {/* Title */}
             <h3 className="text-white text-xl md:text-2xl font-bold mb-6 leading-tight min-h-[60px] flex items-center">
               {role.title}
@@ -46,4 +53,4 @@ const ProfessionalRoles = () => {
   );
 };
 
-export default ProfessionalRoles;
+export default ProfessionalRoles;

@@ -38,16 +38,15 @@ const HeroSection = () => {
             </p>
             
             <p>
-              A central committee member of RSP, her legislative journey is rooted in advocating 
-              for the Khas Arya cluster and structural reforms in mental health services. 
-              With a background from Rolpa, her transition from media and journalism (Galaxy 4K, 
-              AP1 TV) to the parliament reflects her commitment to giving a voice to the unheard.
+              Beyond her legislative duties, she is an experienced Psychosocial Counselor and a Senior Communications professional. 
+              As a Central Committee Member of RSP, she is actively involved in defining the party's vision, 
+              manifesto (Manifesto 2082), and drafting the party's constitution and bylaws.
             </p>
 
-            <p className="text-gray-500">
-              Alongside her political and organizational responsibilities, her role as a 
-              Psychosocial Counselor reflects a deep commitment to emotional well-being, 
-              mental health awareness...
+            <p>
+              With a background in journalism as a former Prime Time News Presenter at Galaxy Television, 
+              she has built a strong network across Nepal. Her work also extends to public service, 
+              having served as the Project Head for the Shramadhan App at the Ministry of Work and Employment.
             </p>
           </div>
 

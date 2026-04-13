@@ -1,5 +1,6 @@
 import AboutSection from '@/components/AboutSection'
 import AcademicTimeline from '@/components/AcademicTimeline'
+import Publications from '@/components/Publications'
 import PageHeader from '@/components/global/PageHeader'
 import React from 'react'
 
@@ -13,6 +14,7 @@ const page = () => {
     <main>
         <PageHeader title="About Krantishikha" />
         <AboutSection/>
+        <Publications/>
         <AcademicTimeline/>
     </main>
   )

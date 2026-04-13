@@ -17,25 +17,23 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: {
     template: '%s | Krantishikha Dhital',
-    default: 'Krantishikha Dhital | Member of Parliament, Nepal',
+    default: 'Krantishikha Dhital | Political Leader & Psychosocial Counselor',
   },
-  description: "Official website of Krantishikha Dhital — Lawmaker of the Federal Parliament of Nepal (RSP), Psychosocial Counselor, and Social Advocate. Dedicated to public service and mental health.",
-  keywords: ["Krantishikha Dhital", "Rastriya Swatantra Party", "RSP Nepal", "Member of Parliament Nepal", "Psychosocial Counselor Nepal", "Nepali Politician"],
+  description: "Official website of Krantishikha Dhital — Central Committee Member of Rastriya Swatantra Party (RSP), Psychosocial Counselor, and Senior Communications Professional.",
+  keywords: ["Krantishikha Dhital", "Rastriya Swatantra Party", "RSP Nepal", "Psychosocial Counselor Nepal", "Media Professional Nepal", "Shramadhan App Project Head"],
   authors: [{ name: "Krantishikha Dhital" }],
   openGraph: {
-    title: 'Krantishikha Dhital | Member of Parliament, Nepal',
-    description: 'Official representative and social advocate dedicated to national development and mental health advocacy.',
-    url: 'https://krantishikha.com',
+    title: 'Krantishikha Dhital | Political Leader & Psychosocial Counselor',
+    description: 'Central Committee Member of RSP and advocate for psychosocial well-being and social concerns.',
+    url: 'https://krantishikha.com.np',
     siteName: 'Krantishikha Dhital',
     locale: 'en_US',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Krantishikha Dhital | Member of Parliament, Nepal',
-    description: 'Official representative and social advocate dedicated to national development and mental health advocacy.',
-    site: '@krantishikha',
-    creator: '@krantishikha',
+    title: 'Krantishikha Dhital | Political Leader & Psychosocial Counselor',
+    description: 'Central Committee Member of RSP and advocate for psychosocial well-being and social concerns.',
   },
   robots: {
     index: true,

@@ -33,21 +33,13 @@ const TimelineItem = ({ title, description, isLast }: TimelineItemProps) => (
   </div>
 );
 
+import { portfolioData } from '@/lib/portfolio-data';
+
 const AcademicTimeline = () => {
-  const academicData = [
-    {
-      title: "Master's in Psychosocial Counseling",
-      description: "Advanced academic foundation in human psychology and counseling techniques, which currently informs her policy work on national mental health advocacy."
-    },
-    {
-      title: "Bachelor's in Journalism & Communication",
-      description: "Developed strong communication skills and public outreach expertise, serving as the basis for her successful career in national media (Galaxy 4K, AP1 TV)."
-    },
-    {
-      title: "Professional Media & Leadership Training",
-      description: "Specialized certifications in public speaking, strategic communication, and leadership, bridging her media background with her current role in Parliament."
-    }
-  ];
+  const academicData = portfolioData.education.map((edu) => ({
+    title: edu.degree,
+    description: `${edu.institution}${edu.status ? ` - ${edu.status}` : ''}`
+  }));
 
   return (
     <section className="w-full py-20 px-6 md:px-12 bg-linear-to-br from-[#001035] via-[#001f54] to-[#001035]">

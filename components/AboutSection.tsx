@@ -2,6 +2,8 @@
 
 import React from 'react';
 import Image from 'next/image';
+import { portfolioData } from '@/lib/portfolio-data';
+import { Book, Link as LinkIcon, Edit, UserSquare } from 'iconsax-reactjs';
 
 const AboutSection = () => {
   return (
@@ -15,38 +17,40 @@ const AboutSection = () => {
           </h2>
           
           <div className="space-y-4 text-gray-700 leading-relaxed text-sm md:text-base text-justify">
-            <p className="font-medium">
-              Krantishikha Dhital is a dedicated public leader, social advocate, and counselor 
-              committed to serving society through responsible leadership and meaningful action. 
-              Her work combines legislative responsibility, organizational leadership, and 
-              psychosocial support, creating impact across both policy and community levels.
+            <p className="font-medium text-[#001f54]/90 italic">
+              "Dedicated to addressing social concerns, formulating policy, and exemplifying honesty in leadership."
             </p>
             
             <p>
-              As a Member of Federal Parliament, she actively contributes to national discussions, 
-              policy development, and representation of public concerns. As a Central Committee Member, 
-              she participates in strategic leadership, decision-making, and strengthening institutional 
-              values. Alongside her political and organizational responsibilities, her role as a 
-              Psychosocial Counselor reflects a deep commitment to emotional well-being, mental health 
-              awareness, and human-centered support.
+              {portfolioData.careerSummary}
             </p>
 
-            <p>
-              Originally from Rolpa, the historic heart of Nepal's social transformations, Krantishikha 
-              has always been driven by a desire to represent the voices of the unheard. Before her 
-              transition into the Federal Parliament, she established herself as a prominent media 
-              personality and journalist, working with major networks including Galaxy 4K, AP1 TV, 
-              and Janata TV. Her ability to communicate complex social issues was further 
-              highlighted when she won the title of Miss Globe Nepal in 2018.
-            </p>
-
-            <p>
-              As a youthful and dynamic lawmaker from the Rastriya Swatantra Party (RSP), she is a 
-              vocal advocate for structural changes in Nepal's mental health policy. Her unique 
-              perspective as a trained psychosocial counselor allows her to bridge the gap between 
-              human emotional needs and legislative action, ensuring that "mental health for all" 
-              is not just a slogan, but a lived reality for every citizen of Nepal.
-            </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+              <div className="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                <h4 className="font-bold text-[#001f54] text-sm md:text-base mb-2">Political Leadership</h4>
+                <p className="text-xs md:text-sm text-gray-600">
+                  As a Central Committee Member of the Rastriya Swatantra Party, Krantishikha plays a vital role in defining the party's vision, ideology, and manifesto for 2082.
+                </p>
+              </div>
+              <div className="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                <h4 className="font-bold text-[#001f54] text-sm md:text-base mb-2">Public Service</h4>
+                <p className="text-xs md:text-sm text-gray-600">
+                   Project Head for the Shramadhan App at the Ministry of Work and Employment, focusing on labor policy and employment promotion.
+                </p>
+              </div>
+              <div className="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                <h4 className="font-bold text-[#001f54] text-sm md:text-base mb-2">Entrepreneurship</h4>
+                <p className="text-xs md:text-sm text-gray-600">
+                  Founder of Calm Convo Mental Health Counselling Centre and Partner at Khadi Personal Care.
+                </p>
+              </div>
+              <div className="bg-blue-50 p-4 rounded-xl border border-blue-100">
+                <h4 className="font-bold text-[#001f54] text-sm md:text-base mb-2">Media & Communication</h4>
+                <p className="text-xs md:text-sm text-gray-600">
+                  Former Prime Time News Presenter at Galaxy Television with a strong background in journalism and public engagement.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
 

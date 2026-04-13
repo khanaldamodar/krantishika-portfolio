@@ -16,8 +16,8 @@ const slides = [
   {
     image: "/me/hero.png",
     title: "Krantishikha Dhital",
-    subtitle: "Lawmaker, Federal Parliament of Nepal (RSP) | Psychosocial Counselor | Media Professional",
-    description: "Dedicated to representing the Khas Arya cluster and advocating for national mental health policy through the Rastriya Swatantra Party.",
+    subtitle: "Psychosocial Counselor | Senior Communications Professional | Political Leader",
+    description: "Dedicated to addressing social concerns, formulating national policy, and providing trauma-informed psychosocial support for a resilient society.",
   }
 ];
 
